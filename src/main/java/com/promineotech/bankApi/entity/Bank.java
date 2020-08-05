@@ -28,7 +28,7 @@ public class Bank {
 		this.location = location;
 	}
 
-	@OneToMany(mappedBy = "account")
+	@OneToMany(mappedBy = "accountId")
 	public Long getAccount() {
 		return account;
 	}
