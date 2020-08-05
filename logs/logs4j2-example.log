@@ -1,0 +1,831 @@
+2020-08-04 22:26:38.165  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] c.p.b.App                                : Starting App on Cesars-MacBook-Pro.local with PID 12491 (/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes started by cesarmoctezuma in /Users/cesarmoctezuma/eclipse-workspace/bankApi)
+2020-08-04 22:26:38.199  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3d2d093e: startup date [Tue Aug 04 22:26:38 MST 2020]; root of context hierarchy
+2020-08-04 22:26:38.713  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-08-04 22:26:39.114  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.1.3.Final
+2020-08-04 22:26:39.272  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a0bbb3e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:26:39.296  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:26:39.305  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:26:39.313  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:26:39.766  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-08-04 22:26:39.954  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Starting service Tomcat
+2020-08-04 22:26:39.956  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.0.26
+2020-08-04 22:26:40.157  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-08-04 22:26:40.158  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1962 ms
+2020-08-04 22:26:40.711  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-08-04 22:26:40.715  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-04 22:26:40.716  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-08-04 22:26:40.936  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-08-04 22:26:40.947  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-04 22:26:41.041  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.Version                              : HHH000412: Hibernate Core {4.3.11.Final}
+2020-08-04 22:26:41.043  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-08-04 22:26:41.045  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2020-08-04 22:26:41.193  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2020-08-04 22:26:42.030 ERROR Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.t.j.p.ConnectionPool                 : Unable to create initial connections of pool.
+java.sql.SQLSyntaxErrorException: Unknown database 'bankapi'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:307)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:704)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:638)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:483)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:141)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1887)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1845)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-04 22:26:42.033  WARN Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.e.j.i.JdbcServicesImpl               : HHH000342: Could not obtain connection to query metadata : Unknown database 'bankapi'
+2020-08-04 22:26:42.044  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-04 22:26:42.054  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.e.j.i.LobCreatorBuilder              : HHH000422: Disabling contextual LOB creation as connection was null
+2020-08-04 22:26:42.160  WARN Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
+2020-08-04 22:26:42.169  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Stopping service Tomcat
+2020-08-04 22:26:42.180  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes/, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-jpa/1.7.3.RELEASE/spring-data-jpa-1.7.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar, file:/Users/cesarmoctezuma/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar, file:/Users/cesarmoctezuma/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-core/2.1/log4j-core-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-commons/1.9.3.RELEASE/spring-data-commons-1.9.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.1/log4j-slf4j-impl-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/security/spring-security-crypto/5.1.2.RELEASE/spring-security-crypto-5.1.2.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.6.RELEASE/spring-boot-autoconfigure-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.26/tomcat-embed-core-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjweaver/1.8.6/aspectjweaver-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.2.6.RELEASE/spring-boot-starter-web-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot/1.2.6.RELEASE/spring-boot-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.26/tomcat-embed-el-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-expression/4.1.7.RELEASE/spring-expression-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.2.6.RELEASE/spring-boot-starter-aop-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.2.6.RELEASE/spring-boot-starter-jdbc-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aspects/4.1.7.RELEASE/spring-aspects-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.26/tomcat-jdbc-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-orm/4.1.7.RELEASE/spring-orm-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.26/tomcat-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.2.6.RELEASE/spring-boot-starter-data-jpa-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-log4j2/1.2.6.RELEASE/spring-boot-starter-log4j2-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.26/tomcat-embed-websocket-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.11.Final/hibernate-entitymanager-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.26/tomcat-embed-logging-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-api/2.1/log4j-api-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.6.RELEASE/spring-boot-starter-tomcat-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-tx/4.1.7.RELEASE/spring-tx-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjrt/1.8.6/aspectjrt-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.6.RELEASE/spring-boot-starter-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-core/4.1.7.RELEASE/spring-core-4.1.7.RELEASE.jar]
+2020-08-04 22:26:42.182  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2020-08-04 22:26:42.183 ERROR Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.SpringApplication                  : Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
+2020-08-04 22:31:32.079  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] c.p.b.App                                : Starting App on Cesars-MacBook-Pro.local with PID 12570 (/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes started by cesarmoctezuma in /Users/cesarmoctezuma/eclipse-workspace/bankApi)
+2020-08-04 22:31:32.109  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@21841f2d: startup date [Tue Aug 04 22:31:32 MST 2020]; root of context hierarchy
+2020-08-04 22:31:32.630  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-08-04 22:31:32.997  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.1.3.Final
+2020-08-04 22:31:33.112  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a980267f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:31:33.132  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:31:33.137  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:31:33.140  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:31:33.397  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-08-04 22:31:33.522  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Starting service Tomcat
+2020-08-04 22:31:33.523  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.0.26
+2020-08-04 22:31:33.699  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-08-04 22:31:33.700  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1594 ms
+2020-08-04 22:31:34.185  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-08-04 22:31:34.188  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-04 22:31:34.188  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-08-04 22:31:34.426  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-08-04 22:31:34.433  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-04 22:31:34.501  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.Version                              : HHH000412: Hibernate Core {4.3.11.Final}
+2020-08-04 22:31:34.503  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-08-04 22:31:34.504  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2020-08-04 22:31:34.620  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2020-08-04 22:31:35.398  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-04 22:31:35.484  WARN Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
+2020-08-04 22:31:35.497  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Stopping service Tomcat
+2020-08-04 22:31:35.506  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes/, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-jpa/1.7.3.RELEASE/spring-data-jpa-1.7.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar, file:/Users/cesarmoctezuma/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar, file:/Users/cesarmoctezuma/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-core/2.1/log4j-core-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-commons/1.9.3.RELEASE/spring-data-commons-1.9.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.1/log4j-slf4j-impl-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/security/spring-security-crypto/5.1.2.RELEASE/spring-security-crypto-5.1.2.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.6.RELEASE/spring-boot-autoconfigure-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.26/tomcat-embed-core-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjweaver/1.8.6/aspectjweaver-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.2.6.RELEASE/spring-boot-starter-web-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot/1.2.6.RELEASE/spring-boot-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.26/tomcat-embed-el-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-expression/4.1.7.RELEASE/spring-expression-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.2.6.RELEASE/spring-boot-starter-aop-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.2.6.RELEASE/spring-boot-starter-jdbc-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aspects/4.1.7.RELEASE/spring-aspects-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.26/tomcat-jdbc-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-orm/4.1.7.RELEASE/spring-orm-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.26/tomcat-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.2.6.RELEASE/spring-boot-starter-data-jpa-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-log4j2/1.2.6.RELEASE/spring-boot-starter-log4j2-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.26/tomcat-embed-websocket-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.11.Final/hibernate-entitymanager-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.26/tomcat-embed-logging-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-api/2.1/log4j-api-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.6.RELEASE/spring-boot-starter-tomcat-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-tx/4.1.7.RELEASE/spring-tx-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjrt/1.8.6/aspectjrt-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.6.RELEASE/spring-boot-starter-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-core/4.1.7.RELEASE/spring-core-4.1.7.RELEASE.jar]
+2020-08-04 22:31:35.511  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2020-08-04 22:31:35.511 ERROR Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.SpringApplication                  : Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
+2020-08-04 22:40:07.253  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] c.p.b.App                                : Starting App on Cesars-MacBook-Pro.local with PID 12647 (/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes started by cesarmoctezuma in /Users/cesarmoctezuma/eclipse-workspace/bankApi)
+2020-08-04 22:40:07.280  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66df645c: startup date [Tue Aug 04 22:40:07 MST 2020]; root of context hierarchy
+2020-08-04 22:40:07.711  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-08-04 22:40:08.055  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.1.3.Final
+2020-08-04 22:40:08.182  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0c4ddc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:40:08.199  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:40:08.209  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:40:08.213  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:40:08.475  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-08-04 22:40:08.594  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Starting service Tomcat
+2020-08-04 22:40:08.596  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.0.26
+2020-08-04 22:40:08.756  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-08-04 22:40:08.757  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1479 ms
+2020-08-04 22:40:09.245  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-08-04 22:40:09.247  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-04 22:40:09.248  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-08-04 22:40:09.452  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-08-04 22:40:09.461  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-04 22:40:09.522  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.Version                              : HHH000412: Hibernate Core {4.3.11.Final}
+2020-08-04 22:40:09.524  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-08-04 22:40:09.526  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2020-08-04 22:40:09.652  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2020-08-04 22:40:10.441  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-04 22:40:10.508  WARN Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
+2020-08-04 22:40:10.519  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Stopping service Tomcat
+2020-08-04 22:40:10.528  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes/, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-jpa/1.7.3.RELEASE/spring-data-jpa-1.7.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar, file:/Users/cesarmoctezuma/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar, file:/Users/cesarmoctezuma/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-core/2.1/log4j-core-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-commons/1.9.3.RELEASE/spring-data-commons-1.9.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.1/log4j-slf4j-impl-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/security/spring-security-crypto/5.1.2.RELEASE/spring-security-crypto-5.1.2.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.6.RELEASE/spring-boot-autoconfigure-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.26/tomcat-embed-core-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjweaver/1.8.6/aspectjweaver-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.2.6.RELEASE/spring-boot-starter-web-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot/1.2.6.RELEASE/spring-boot-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.26/tomcat-embed-el-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-expression/4.1.7.RELEASE/spring-expression-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.2.6.RELEASE/spring-boot-starter-aop-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.2.6.RELEASE/spring-boot-starter-jdbc-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aspects/4.1.7.RELEASE/spring-aspects-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.26/tomcat-jdbc-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-orm/4.1.7.RELEASE/spring-orm-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.26/tomcat-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.2.6.RELEASE/spring-boot-starter-data-jpa-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-log4j2/1.2.6.RELEASE/spring-boot-starter-log4j2-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.26/tomcat-embed-websocket-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.11.Final/hibernate-entitymanager-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.26/tomcat-embed-logging-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-api/2.1/log4j-api-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.6.RELEASE/spring-boot-starter-tomcat-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-tx/4.1.7.RELEASE/spring-tx-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjrt/1.8.6/aspectjrt-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.6.RELEASE/spring-boot-starter-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-core/4.1.7.RELEASE/spring-core-4.1.7.RELEASE.jar]
+2020-08-04 22:40:10.531  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2020-08-04 22:40:10.531 ERROR Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.SpringApplication                  : Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
+2020-08-04 22:42:02.529  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] c.p.b.App                                : Starting App on Cesars-MacBook-Pro.local with PID 12694 (/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes started by cesarmoctezuma in /Users/cesarmoctezuma/eclipse-workspace/bankApi)
+2020-08-04 22:42:02.554  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63af73b7: startup date [Tue Aug 04 22:42:02 MST 2020]; root of context hierarchy
+2020-08-04 22:42:02.992  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-08-04 22:42:03.354  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.1.3.Final
+2020-08-04 22:42:03.473  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6473e1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:42:03.489  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:42:03.498  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:42:03.502  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-04 22:42:03.753  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-08-04 22:42:03.864  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Starting service Tomcat
+2020-08-04 22:42:03.866  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.0.26
+2020-08-04 22:42:04.015  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-08-04 22:42:04.016  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1465 ms
+2020-08-04 22:42:04.480  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-08-04 22:42:04.484  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-04 22:42:04.484  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-08-04 22:42:04.691  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-08-04 22:42:04.702  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-04 22:42:04.765  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.Version                              : HHH000412: Hibernate Core {4.3.11.Final}
+2020-08-04 22:42:04.766  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-08-04 22:42:04.768  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2020-08-04 22:42:04.877  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2020-08-04 22:42:05.624  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-04 22:42:05.693  WARN Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
+2020-08-04 22:42:05.710  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Stopping service Tomcat
+2020-08-04 22:42:05.718  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes/, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-jpa/1.7.3.RELEASE/spring-data-jpa-1.7.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar, file:/Users/cesarmoctezuma/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar, file:/Users/cesarmoctezuma/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-core/2.1/log4j-core-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-commons/1.9.3.RELEASE/spring-data-commons-1.9.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.1/log4j-slf4j-impl-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/security/spring-security-crypto/5.1.2.RELEASE/spring-security-crypto-5.1.2.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.6.RELEASE/spring-boot-autoconfigure-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.26/tomcat-embed-core-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjweaver/1.8.6/aspectjweaver-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.2.6.RELEASE/spring-boot-starter-web-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot/1.2.6.RELEASE/spring-boot-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.26/tomcat-embed-el-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-expression/4.1.7.RELEASE/spring-expression-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.2.6.RELEASE/spring-boot-starter-aop-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.2.6.RELEASE/spring-boot-starter-jdbc-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aspects/4.1.7.RELEASE/spring-aspects-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.26/tomcat-jdbc-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-orm/4.1.7.RELEASE/spring-orm-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.26/tomcat-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.2.6.RELEASE/spring-boot-starter-data-jpa-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-log4j2/1.2.6.RELEASE/spring-boot-starter-log4j2-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.26/tomcat-embed-websocket-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.11.Final/hibernate-entitymanager-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.26/tomcat-embed-logging-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-api/2.1/log4j-api-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.6.RELEASE/spring-boot-starter-tomcat-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-tx/4.1.7.RELEASE/spring-tx-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjrt/1.8.6/aspectjrt-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.6.RELEASE/spring-boot-starter-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-core/4.1.7.RELEASE/spring-core-4.1.7.RELEASE.jar]
+2020-08-04 22:42:05.722  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2020-08-04 22:42:05.722 ERROR Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.SpringApplication                  : Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
+2020-08-05 09:51:37.621  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] c.p.b.App                                : Starting App on Cesars-MacBook-Pro.local with PID 12977 (/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes started by cesarmoctezuma in /Users/cesarmoctezuma/eclipse-workspace/bankApi)
+2020-08-05 09:51:37.652  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b76a6a: startup date [Wed Aug 05 09:51:37 MST 2020]; root of context hierarchy
+2020-08-05 09:51:38.151  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-08-05 09:51:38.566  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.1.3.Final
+2020-08-05 09:51:38.723  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84eccb12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-05 09:51:38.745  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-05 09:51:38.754  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-05 09:51:38.760  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-05 09:51:39.077  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-08-05 09:51:39.206  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Starting service Tomcat
+2020-08-05 09:51:39.207  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.0.26
+2020-08-05 09:51:39.392  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-08-05 09:51:39.392  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1742 ms
+2020-08-05 09:51:39.950  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-08-05 09:51:39.955  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-05 09:51:39.956  INFO Cesars-MacBook-Pro.local
+	---[ost-startStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-08-05 09:51:40.165  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-08-05 09:51:40.176  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-05 09:51:40.269  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.Version                              : HHH000412: Hibernate Core {4.3.11.Final}
+2020-08-05 09:51:40.271  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-08-05 09:51:40.273  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2020-08-05 09:51:40.428  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2020-08-05 09:51:41.369  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-05 09:51:41.465  WARN Cesars-MacBook-Pro.local
+	---[kApi.App.main()] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
+2020-08-05 09:51:41.478  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.a.c.c.StandardService                  : Stopping service Tomcat
+2020-08-05 09:51:41.488  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/src/main/resources/, file:/Users/cesarmoctezuma/eclipse-workspace/bankApi/target/classes/, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-jpa/1.7.3.RELEASE/spring-data-jpa-1.7.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar, file:/Users/cesarmoctezuma/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar, file:/Users/cesarmoctezuma/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-core/2.1/log4j-core-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/data/spring-data-commons/1.9.3.RELEASE/spring-data-commons-1.9.3.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.1/log4j-slf4j-impl-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/security/spring-security-crypto/5.1.2.RELEASE/spring-security-crypto-5.1.2.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.6.RELEASE/spring-boot-autoconfigure-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.26/tomcat-embed-core-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjweaver/1.8.6/aspectjweaver-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.2.6.RELEASE/spring-boot-starter-web-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot/1.2.6.RELEASE/spring-boot-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.26/tomcat-embed-el-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-expression/4.1.7.RELEASE/spring-expression-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.2.6.RELEASE/spring-boot-starter-aop-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.2.6.RELEASE/spring-boot-starter-jdbc-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-aspects/4.1.7.RELEASE/spring-aspects-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.26/tomcat-jdbc-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-orm/4.1.7.RELEASE/spring-orm-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.26/tomcat-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.2.6.RELEASE/spring-boot-starter-data-jpa-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-log4j2/1.2.6.RELEASE/spring-boot-starter-log4j2-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.26/tomcat-embed-websocket-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.11.Final/hibernate-entitymanager-4.3.11.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.26/tomcat-embed-logging-juli-8.0.26.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/apache/logging/log4j/log4j-api/2.1/log4j-api-2.1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.6.RELEASE/spring-boot-starter-tomcat-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-tx/4.1.7.RELEASE/spring-tx-4.1.7.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/aspectj/aspectjrt/1.8.6/aspectjrt-1.8.6.jar, file:/Users/cesarmoctezuma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.6.RELEASE/spring-boot-starter-1.2.6.RELEASE.jar, file:/Users/cesarmoctezuma/.m2/repository/org/springframework/spring-core/4.1.7.RELEASE/spring-core-4.1.7.RELEASE.jar]
+2020-08-05 09:51:41.490  INFO Cesars-MacBook-Pro.local
+	---[kApi.App.main()] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2020-08-05 09:51:41.491 ERROR Cesars-MacBook-Pro.local
+	---[kApi.App.main()] o.s.b.SpringApplication                  : Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:687)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:967)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:956)
+	at com.promineotech.bankApi.App.main(App.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.RunMojo$LaunchRunner.run(RunMojo.java:418)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 21 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.promineotech.bankApi.entity.Bank
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 29 more
