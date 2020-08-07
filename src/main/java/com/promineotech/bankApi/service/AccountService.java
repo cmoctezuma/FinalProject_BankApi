@@ -38,14 +38,14 @@ public class AccountService {
 		return repo.save(foundAccount);
 	}
 
-	public Account createAccount(Account account, Long customerId) throws Exception {
-		Customer customer = customerRepo.findOne(customerId);
+	public Account createAccount(Account account, Long id) throws Exception {
+		Customer customer = customerRepo.findOne(id);
 		if (customer== null) {
 			throw new Exception("User not found.");
 		}
 		account.setAccountType(account.getAccountType());
-		account.setAccountNumber(account.getAccountNumber());
-		account.setBankId(account.getBankId());
+		account.setAccount(account.getAccount());
+		account.setBank(account.getBank());
 		account.setCustomer(customer);
 		return repo.save(account);
 	}

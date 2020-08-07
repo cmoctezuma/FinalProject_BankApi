@@ -6,10 +6,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.promineotech</groupId>
-	<artifactId>bankApi</artifactId>
+	<artifactId>inventoryManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>bankApi</name>
+	<name>inventoryManagement</name>
 	<url>http://maven.apache.org</url>
 
 	<parent>

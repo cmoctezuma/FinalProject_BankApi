@@ -3,21 +3,30 @@ package com.promineotech.bankApi.entity;
 import java.time.LocalTime;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Transaction {
 
 	private Long id;
 	private LocalTime completed;
-	private Long account;
 	private String transactionType;
 	private Long amount;
+	private Customer customer;
+
+	@JsonIgnore
+	private Account account;
 
 
 
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	public Long getId() {
 		return id;
 	}
@@ -36,11 +45,11 @@ public class Transaction {
 
 	@ManyToOne
 	@JoinColumn(name = "accountId")
-	public Long getAccount() {
+	public Account getAccount() {
 		return account;
 	}
 
-	public void setAccount(Long account) {
+	public void setAccount(Account account) {
 		this.account = account;
 	}
 
@@ -58,6 +67,16 @@ public class Transaction {
 
 	public void setAmount(Long amount) {
 		this.amount = amount;
+	}
+
+	@ManyToOne
+	@JoinColumn(name = "customerId")
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
 	}
 
 }

@@ -13,7 +13,7 @@ import com.promineotech.bankApi.entity.Transaction;
 import com.promineotech.bankApi.service.TransactionService;
 
 @RestController
-@RequestMapping("/customers/{customerId}/account/{accountId}/transactions")
+@RequestMapping("/customers/{customerId}/accounts/{accountId}/transactions")
 public class TransactionController {
 
 	@Autowired
@@ -21,9 +21,10 @@ public class TransactionController {
 
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<Object> createTransaction(@RequestBody Transaction transaction, @PathVariable Long customerId,
-			@PathVariable Long accountId) {
+			@PathVariable Long accountId, @RequestBody Long amount, @RequestBody String transactionType) {
 		try {
-			return new ResponseEntity<Object>(service.createTransaction(transaction, customerId, accountId),
+			return new ResponseEntity<Object>(service.createTransaction(transaction, customerId, accountId, amount,
+					transactionType),
 					HttpStatus.OK);
 		} catch (Exception e) {
 			return new ResponseEntity<Object>(e.getMessage(), HttpStatus.BAD_REQUEST);

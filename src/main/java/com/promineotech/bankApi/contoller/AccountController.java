@@ -15,7 +15,7 @@ import com.promineotech.bankApi.entity.Account;
 import com.promineotech.bankApi.service.AccountService;
 
 @RestController
-@RequestMapping("/accounts")
+@RequestMapping("/customers/{id}/accounts")
 public class AccountController {
 
 	private static final Logger logger = LogManager.getLogger(AccountController.class);
@@ -23,10 +23,10 @@ public class AccountController {
 	@Autowired
 	private AccountService service;
 
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-	public ResponseEntity<Object> getAccount(@PathVariable Long id) {
+	@RequestMapping(value = "/{accountId}", method = RequestMethod.GET)
+	public ResponseEntity<Object> getAccount(@PathVariable Long accountId) {
 		try {
-			return new ResponseEntity<Object>(service.getAccount(id), HttpStatus.OK);
+			return new ResponseEntity<Object>(service.getAccount(accountId), HttpStatus.OK);
 		} catch (Exception e) {
 			return new ResponseEntity<Object>(e.getMessage(), HttpStatus.NOT_FOUND);
 		}
@@ -43,14 +43,15 @@ public class AccountController {
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<Object> createAccount(@RequestBody Account account, @PathVariable Long id) throws Exception {
-		return new ResponseEntity<Object>(service.createAccount(account, id), HttpStatus.CREATED);
+	public ResponseEntity<Object> createAccount(@RequestBody Account account, @PathVariable Long customerId)
+			throws Exception {
+		return new ResponseEntity<Object>(service.createAccount(account, customerId), HttpStatus.CREATED);
 	}
 
-	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-	public ResponseEntity<Object> updateAccount(@RequestBody Account account, @PathVariable Long id) {
+	@RequestMapping(value = "/{accountId}", method = RequestMethod.PUT)
+	public ResponseEntity<Object> updateAccount(@RequestBody Account account, @PathVariable Long accountId) {
 		try {
-			return new ResponseEntity<Object>(service.updateAccount(account, id), HttpStatus.OK);
+			return new ResponseEntity<Object>(service.updateAccount(account, accountId), HttpStatus.OK);
 		} catch (Exception e) {
 			return new ResponseEntity<Object>(e.getMessage(), HttpStatus.NOT_FOUND);
 		}

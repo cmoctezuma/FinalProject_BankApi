@@ -14,12 +14,12 @@ import javax.persistence.OneToMany;
 public class Account {
 
 	private Long id;
-	private Long accountNumber;
+	private Long account;
 	private String accountType;
 	private Long balance;
 	private Customer customer;
-	private long bankId;
 	private Set<Transaction> transactions;
+	private Bank bank;
 
 
 	@Id
@@ -33,12 +33,12 @@ public class Account {
 	}
 
 
-	public Long getAccountNumber() {
-		return accountNumber;
+	public Long getAccount() {
+		return account;
 	}
 
-	public void setAccountNumber(Long accountNumber) {
-		this.accountNumber = accountNumber;
+	public void setAccount(Long account) {
+		this.account = account;
 	}
 
 	public String getAccountType() {
@@ -57,16 +57,6 @@ public class Account {
 		this.balance = balance;
 	}
 
-	@ManyToOne
-	@JoinColumn(name = "bankId")
-	public long getBankId() {
-		return bankId;
-	}
-
-	public void setBankId(long bankId) {
-		this.bankId = bankId;
-	}
-
 	@OneToMany(mappedBy = "account")
 	public Set<Transaction> getTransactions() {
 		return transactions;
@@ -76,7 +66,6 @@ public class Account {
 		this.transactions = transactions;
 	}
 
-
 	@ManyToOne
 	@JoinColumn(name = "customerId")
 	public Customer getCustomer() {
@@ -85,6 +74,16 @@ public class Account {
 
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
+	}
+
+	@ManyToOne
+	@JoinColumn(name = "Bankid")
+	public Bank getBank() {
+		return bank;
+	}
+
+	public void setBank(Bank bank) {
+		this.bank = bank;
 	}
 
 }

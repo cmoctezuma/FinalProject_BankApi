@@ -29,6 +29,7 @@ public class UserController {
 		}
 	}
 
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ResponseEntity<Object> login(@RequestBody Credentials cred) {
 		try {
 			return new ResponseEntity<Object>(authService.login(cred), HttpStatus.OK);

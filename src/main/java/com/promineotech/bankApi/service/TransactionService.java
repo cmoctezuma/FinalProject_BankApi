@@ -25,11 +25,13 @@ public class TransactionService {
 	@Autowired
 	private CustomerRepository customerrepo;
 
-	public Transaction createTransaction(Transaction transaction, Long customerId, Long accountId) throws Exception {
+	public Transaction createTransaction(Transaction transaction, Long customerId, Long accountId, Long amount,
+			String transactionType) throws Exception {
+		calculateBalance(amount, transactionType);
 		return repo.save(transaction);
 	}
 
-	public Long calculateBalance(long amount) {
+	public Long calculateBalance(long amount, String transactionType) {
 		long total = 0;
 		if (transaction.getTransactionType().equals("deposit")) {
 			total = account.getBalance() + amount;

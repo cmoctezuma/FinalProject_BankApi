@@ -1,11 +1,16 @@
 package com.promineotech.bankApi.entity;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Customer {
@@ -14,8 +19,16 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	private String address;
-	private Long accountNumber;
-	private Long user;
+	private User user;
+	/*
+	 * private Long userId; private Long customerId;
+	 */
+
+	@JsonIgnore
+	private Set<Account> account;
+
+	@JsonIgnore
+	private Set<Transaction> transactions;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -52,21 +65,41 @@ public class Customer {
 	}
 
 	@OneToMany(mappedBy = "customer")
-	public Long getAccountNumber() {
-		return accountNumber;
+	public Set<Account> getAccount() {
+		return account;
 	}
 
-	public void setAccountNumber(Long accountNumber) {
-		this.accountNumber = accountNumber;
+	public void setAccount(Set<Account> account) {
+		this.account = account;
 	}
 
-	@OneToOne(mappedBy = "customer")
-	public Long getUser() {
+	@OneToOne
+	@JoinColumn(name = "id")
+	public User getUser() {
 		return user;
 	}
 
-	public void setUser(Long user) {
+	public void setUser(User user) {
 		this.user = user;
 	}
+
+	@OneToMany(mappedBy = "customer")
+	public Set<Transaction> getTransactions() {
+		return transactions;
+	}
+
+	public void setTransactions(Set<Transaction> transactions) {
+		this.transactions = transactions;
+	}
+
+	/*
+	 * public Long getCustomerId() { return customerId; }
+	 *
+	 * public void setCustomerId(Long customerId) { this.customerId = customerId; }
+	 *
+	 * public Long getUserId() { return userId; }
+	 *
+	 * public void setUserId(Long userId) { this.userId = userId; }
+	 */
 
 }
