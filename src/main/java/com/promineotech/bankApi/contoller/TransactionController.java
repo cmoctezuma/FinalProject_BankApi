@@ -20,11 +20,13 @@ public class TransactionController {
 	private TransactionService service;
 
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<Object> createTransaction(@RequestBody Transaction transaction, @PathVariable Long customerId,
+	public ResponseEntity<Object> createTransaction(@RequestBody Transaction transaction,
+			@PathVariable Long customerId,
 			@PathVariable Long accountId, @RequestBody Long amount, @RequestBody String transactionType) {
 		try {
-			return new ResponseEntity<Object>(service.createTransaction(transaction, customerId, accountId, amount,
-					transactionType),
+			return new ResponseEntity<Object>(
+					service.createTransaction(transaction, customerId, accountId, amount,
+							transactionType),
 					HttpStatus.OK);
 		} catch (Exception e) {
 			return new ResponseEntity<Object>(e.getMessage(), HttpStatus.BAD_REQUEST);
@@ -35,6 +37,5 @@ public class TransactionController {
 	public ResponseEntity<Object> getAllTransactions() {
 		return new ResponseEntity<Object>(service.getAllTransactions(), HttpStatus.OK);
 	}
-
 
 }

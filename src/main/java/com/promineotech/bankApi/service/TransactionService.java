@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.promineotech.bankApi.entity.Account;
+import com.promineotech.bankApi.entity.Customer;
 import com.promineotech.bankApi.entity.Transaction;
 import com.promineotech.bankApi.repository.AccountRepository;
 import com.promineotech.bankApi.repository.CustomerRepository;
@@ -20,14 +21,21 @@ public class TransactionService {
 	private TransactionRepository repo;
 
 	@Autowired
-	private AccountRepository acccountrepo;
+	private AccountRepository accountrepo;
 
 	@Autowired
 	private CustomerRepository customerrepo;
 
 	public Transaction createTransaction(Transaction transaction, Long customerId, Long accountId, Long amount,
 			String transactionType) throws Exception {
-		calculateBalance(amount, transactionType);
+		// calculateBalance(amount, transactionType);
+		Customer customer = customerrepo.findOne(customerId);
+		Account account = accountrepo.findOne(accountId);
+		if (customer == null || account == null) {
+			throw new Exception("Customer or account does not exist");
+		}
+		transaction.setCustomer(customer);
+		transaction.setAccount(account);
 		return repo.save(transaction);
 	}
 

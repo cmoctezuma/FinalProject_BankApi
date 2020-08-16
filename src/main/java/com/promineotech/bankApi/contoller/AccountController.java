@@ -43,9 +43,10 @@ public class AccountController {
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<Object> createAccount(@RequestBody Account account, @PathVariable Long customerId)
+	public ResponseEntity<Object> createAccount(@RequestBody Account account,
+			@PathVariable Long id)
 			throws Exception {
-		return new ResponseEntity<Object>(service.createAccount(account, customerId), HttpStatus.CREATED);
+		return new ResponseEntity<Object>(service.createAccount(account, id), HttpStatus.CREATED);
 	}
 
 	@RequestMapping(value = "/{accountId}", method = RequestMethod.PUT)
