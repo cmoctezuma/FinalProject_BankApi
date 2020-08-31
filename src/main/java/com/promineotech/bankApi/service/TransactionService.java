@@ -26,8 +26,7 @@ public class TransactionService {
 	@Autowired
 	private CustomerRepository customerrepo;
 
-	public Transaction createTransaction(Transaction transaction, Long customerId, Long accountId, Long amount,
-			String transactionType) throws Exception {
+	public Transaction createTransaction(Transaction transaction, Long customerId, Long accountId) throws Exception {
 		// calculateBalance(amount, transactionType);
 		Customer customer = customerrepo.findOne(customerId);
 		Account account = accountrepo.findOne(accountId);

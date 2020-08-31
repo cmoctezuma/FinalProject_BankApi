@@ -2,6 +2,7 @@ package com.promineotech.bankApi.entity;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,7 +20,7 @@ public class Account {
 	private Long balance;
 	private Customer customer;
 	private Set<Transaction> transactions;
-	private Bank bank;
+	// private Bank bank;
 
 
 	@Id
@@ -66,8 +67,8 @@ public class Account {
 		this.transactions = transactions;
 	}
 
-	@ManyToOne
-	@JoinColumn(name = "customerId")
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "customer_id")
 	public Customer getCustomer() {
 		return customer;
 	}
@@ -75,15 +76,11 @@ public class Account {
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
-
-	@ManyToOne
-	@JoinColumn(name = "Bankid")
-	public Bank getBank() {
-		return bank;
-	}
-
-	public void setBank(Bank bank) {
-		this.bank = bank;
-	}
-
+	/*
+	 * @ManyToOne
+	 *
+	 * @JoinColumn(name = "Bankid") public Bank getBank() { return bank; }
+	 *
+	 * public void setBank(Bank bank) { this.bank = bank; }
+	 */
 }

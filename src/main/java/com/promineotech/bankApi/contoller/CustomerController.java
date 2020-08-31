@@ -69,4 +69,14 @@ public class CustomerController {
 			return new ResponseEntity<Object>(e.getMessage(), HttpStatus.NOT_FOUND);
 		}
 	}
+
+	@RequestMapping(value = "/{id}/accounts", method = RequestMethod.GET)
+	public ResponseEntity<Object> getAccounts(@PathVariable Long id) {
+		try {
+			return new ResponseEntity<Object>(service.getCustomerById(id).getAccount(), HttpStatus.OK);
+		} catch (Exception e) {
+			return new ResponseEntity<Object>(e.getMessage(), HttpStatus.NOT_FOUND);
+		}
+	}
+
 }

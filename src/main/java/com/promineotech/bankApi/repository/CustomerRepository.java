@@ -6,4 +6,6 @@ import com.promineotech.bankApi.entity.Customer;
 
 public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
+	// public Iterable<Account> findAllAccounts();
+
 }

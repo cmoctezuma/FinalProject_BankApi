@@ -45,7 +45,7 @@ public class AccountService {
 		}
 		account.setAccountType(account.getAccountType());
 		account.setAccount(account.getAccount());
-		account.setBank(account.getBank());
+		// account.setBank(account.getBank());
 		account.setCustomer(customer);
 		return repo.save(account);
 	}

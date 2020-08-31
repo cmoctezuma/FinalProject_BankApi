@@ -8,4 +8,6 @@ public interface AccountRepository extends CrudRepository<Account, Long> {
 
 	// public Iterable<Account> findAllAccountsByCustomerId(Long customerId);
 
+	// public Iterable<Account> findAllById(Long customerId);
+
 }

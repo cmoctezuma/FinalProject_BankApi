@@ -32,15 +32,25 @@ public class AccountController {
 		}
 	}
 
-	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<Object> getAccounts() {
-		logger.debug("Debugging log");
-		logger.info("Info log");
-		logger.warn("Hey, this is a warning!");
-		logger.error("Oops!We have an error");
-		logger.fatal("Something really went wrong!");
-		return new ResponseEntity<Object>(service.getAllAccounts(), HttpStatus.OK);
-	}
+	/*
+	 * @RequestMapping(method = RequestMethod.GET) public ResponseEntity<Object>
+	 * getAccount() { logger.debug("Debugging log"); logger.info("Info log");
+	 * logger.warn("Hey, this is a warning!");
+	 * logger.error("Oops!We have an error");
+	 * logger.fatal("Something really went wrong!"); return new
+	 * ResponseEntity<Object>(service.getAllAccounts(), HttpStatus.OK); }
+	 */
+
+	/*
+	 * @RequestMapping(value = "/{customerId}", method = RequestMethod.GET) public
+	 * ResponseEntity<Object> getAccounts(@PathVariable Long Id) {
+	 * logger.debug("Debugging log"); logger.info("Info log");
+	 * logger.warn("Hey, this is a warning!");
+	 * logger.error("Oops!We have an error");
+	 * logger.fatal("Something really went wrong!"); return new
+	 * ResponseEntity<Object>(service.getAllAccounts(Id), HttpStatus.OK); }
+	 */
+
 
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<Object> createAccount(@RequestBody Account account,

@@ -1,19 +1,16 @@
 package com.promineotech.bankApi.entity;
 
-import java.util.Set;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 @Entity
 public class Bank {
 
 	private Long id;
 	private String location;
-	private Set<Account> accounts;
+	//private Set<Account> accounts;
 
 
 
@@ -35,13 +32,11 @@ public class Bank {
 		this.location = location;
 	}
 
-	@OneToMany(mappedBy = "bank")
-	public Set<Account> getAccount() {
-		return accounts;
-	}
-
-	public void setAccount(Set<Account> accounts) {
-		this.accounts = accounts;
-	}
+	/*
+	 * @OneToMany(mappedBy = "bank") public Set<Account> getAccount() { return
+	 * accounts; }
+	 *
+	 * public void setAccount(Set<Account> accounts) { this.accounts = accounts; }
+	 */
 
 }

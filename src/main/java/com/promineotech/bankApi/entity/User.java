@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 @Entity
 public class User {
@@ -13,7 +12,7 @@ public class User {
 	private long id;
 	private String hash;
 	private String username;
-	private Customer customer;
+	// private Customer customer;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -41,14 +40,11 @@ public class User {
 	public void setHash(String hash) {
 		this.hash = hash;
 	}
-
-	@OneToOne(mappedBy = "user")
-	public Customer getCustomer() {
-		return customer;
-	}
-
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
-	}
+	/*
+	 * @OneToOne(mappedBy = "user") public Customer getCustomer() { return customer;
+	 * }
+	 *
+	 * public void setCustomer(Customer customer) { this.customer = customer; }
+	 */
 
 }
